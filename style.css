@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --ff-heading: 'Staatliches', cursive;
+  --ff-texting: 'Palanquin', sans-serif;
+
+  --fc-tag: #4A4E69;
+  --fc-texting: #23053A;
+  --fc-heading: #FFFFFF;
+
+  --bc-primary: #EFF1FF;
+  --bc-secondary: #8E9AAF;
+  --bc-tag: #CBC0D3;
+  --bc-span: #FEEAFA;
+
+  font-size: 62.5%;
+}
+
+body {
+  font-family: var(--ff-texting);
+  background: var(--bc-primary);
+}
+
+h1, span {
+  font-family: var(--ff-heading);
+  text-transform: uppercase;
+  letter-spacing: 0.5rem;
+  line-height: 3.4rem;
+}
+
+header {
+  background-color: var(--bc-secondary);
+  display: grid;
+  place-items: center;
+  
+}
+
+#logo {
+  padding: 3.2rem 0;
+}
+
+
+.title {
+  background-color: var(--bc-tag);
+  width: 100%;
+  text-align: center;
+  margin-bottom: 2.9rem;
+  padding: 0.8rem;
+}
+
+
+header h1 {
+  font-size: 4rem;
+  font-weight: 400;
+  color: var(--fc-heading);
+  text-shadow: 0px 0.2rem 0.2rem rgba(0, 0, 0, 0.25);
+  letter-spacing: 0.5rem;
+
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* padding: 1.8rem 3.2rem 6rem; */
+}
+
+.text {
+  text-align: center;
+  font-size: 1.4rem;
+  line-height: 2rem;
+  color: var(--fc-texting);
+  width: 32.5rem;
+  margin-bottom: 6.3rem;
+  margin-top: 1.4rem;
+  
+}
+
+.cards {
+  display: grid;
+  gap: 3.6rem;
+}
+
+.cards .card {
+  position: relative;
+}
+
+.cards .card span {
+  font-size: 2rem;
+  padding: 0.1rem 2rem;
+  position: absolute;
+  background-color: var(--bc-span);
+  border-radius: 2rem;
+  color: var(--fc-tag);
+  letter-spacing: 0.2rem;
+  top: 16px;
+  right: 16px;
+
+}
